@@ -47,6 +47,7 @@ header a {
 input {
     border: 1px solid #fdf8f8;
     padding: 8px;
+    border-radius: 5px;
 }
 
 button {
@@ -55,4 +56,5 @@ button {
     background: #2c6dfc;
     color: white;
     padding: 8px;
+    border-radius: 5px;
 }
