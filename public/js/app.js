@@ -5,7 +5,7 @@ const message= [document.querySelector('#message-1'),document.querySelector('#me
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    const location = search.value
+    var location = search.value
 
    
     for(var i = 0; i < message.length; i++){
@@ -28,10 +28,11 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
     })
+    document.getElementById('my-input').value=''
+   
 })
 
 sendLocation.addEventListener('click',(e)=>{
-    e.preventDefault()
     for(var i = 0; i < message.length; i++){
         message[i].innerHTML=''
      }
